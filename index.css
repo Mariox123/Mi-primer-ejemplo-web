@@ -1,0 +1,72 @@
+/*#menu*/ *{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+-webkit-box-sizing: border-box; /*prefijo para safary y google Chrome*/
+-moz-box-sizing: border-box; /*Firefox*/
+-o-box-sizing: border-box; /*Opera*/
+-ms-box-sizing: border-box; /*Internet Explorer*/
+box-sizing: border-box;
+
+}
+
+body {
+	/* */
+	background-position:top center;
+   background-image:url(universo.jpg);
+    width: 100%;
+    max-width: 100%;
+	background-repeat: no-repeat; /*Para que no se repita la imagen*/
+	background-attachment: fixed; /*Para que la imagen quede fija*/
+	background-size: cover;
+
+}
+
+#menu a, #menu a:visited{
+	
+display:none;
+font-size: 16px;
+line-height: 16px;
+color: #FFFFFF;
+background-color: #0D4F70;
+display: block;
+/*margin-right: 4px;*/
+float: left;
+text-align: center;
+padding: 35px 109px;
+text-decoration: none;
+}
+
+#menu a:hover {
+	
+color: #39B8CB;
+/*background-color: #F90;#308EA2*/
+}
+
+#menu .actual {
+
+color: #333;
+background-color: #FFF;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #666;
+}
+
+header nav ul li a{
+	
+	color: #155A04;
+	background: rgba(0,0,0,0.53);
+	transition: 0.8s all ease;
+	
+}
+
+h1 {
+	padding: 200px 105px;
+	text-align: center;
+    width: 100%;
+    display: inline-block;
+    float: align;
+}
+
+
+	
