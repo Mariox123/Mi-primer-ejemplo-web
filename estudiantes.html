@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Iniciar Sesión</title>
+	<link rel="stylesheet" type="text/css" href="estudiantes.css">
+	<!--<meta http-equiv="refresh" content="3"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />-->
+	
+</head>
+<body>
+
+		<style type="text/css">
+
+/*#menu*/ *{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+-webkit-box-sizing: border-box; /*prefijo para safary y google Chrome*/
+-moz-box-sizing: border-box; /*Firefox*/
+-o-box-sizing: border-box; /*Opera*/
+-ms-box-sizing: border-box; /*Internet Explorer*/
+box-sizing: border-box;
+
+}
+
+body {
+	/* */
+    width: 100%;
+    max-width: 100%;
+	background-repeat: no-repeat; /*Para que no se repita la imagen*/
+	background-attachment: fixed; /*Para que la imagen quede fija*/
+	background-size: cover;
+
+
+}
+
+#menu a, #menu a:visited{
+
+display:none;
+font-size: 15px;
+line-height: 16px;
+color: #FFFFFF;
+background-color: #0D4F70;
+display: block;
+/*margin-right: 4px;*/
+float: left;
+text-align: center;
+padding: 35px 109px;
+text-decoration: none;
+}
+
+#menu a:hover {
+color: #39B8CB;
+/*background-color: #F90;*/
+}
+
+#menu .actual {
+color: #333;
+background-color: #FFF;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #666;
+}
+
+header nav ul li a{
+
+	color: #155A04;
+	background: rgba(0,0,0,0.53);
+	transition: 0.8s all ease;
+	
+}
+
+    </style>
+
+    <header>
+          <nav>
+   	
+            <ul id="menu">
+
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="estudiantes.html">Estudiantes</a></li>
+                <li><a href="administrador.php">Administrador</a></li>
+                <li><a href="informacion.php">Informacion</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
+    
+            </ul>
+
+          </nav>
+    </header>
+	
+	<br>
+	
+	<form accion="Sesion.php" method="post" name="form">
+
+		<center> <h1><p>Iniciar Sesión</p></h1> </center><br>
+
+		<label for="Usuario">Cédula de indentidad:</label><!--Usuario es la cedula de identidad-->
+		<input type="text" placeholder="V-" name="usuario">
+		<label>Sin guiones, ni puntos (ej: 20950429)</label><br><br>
+
+		<label for="Clave">Clave:</label>
+		<input type="password" placeholder="Clave" name="clave">
+
+		<div class="Regis"> <a href=""><p align="right"><input type="submit" value="Iniciar Sesión"></p></a></div>
+
+		<center><p style="color:white;">¿No tiene una cuenta?</p><a href="Registro.php" style="color:#FF0000;">Crea una.</a></center>
+        
+		
+	</form>
+
+	
+
+</body>
+</html>
